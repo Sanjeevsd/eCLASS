@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".splash"
+        android:background="@color/colorPrimary" tools:layout_editor_absoluteY="25dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/logo"
+            android:id="@+id/logo_view"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="101dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="80dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="80dp"
+            android:layout_marginBottom="20dp" app:layout_constraintBottom_toTopOf="@+id/name_view"
+            app:layout_constraintHorizontal_bias="0.5"/>
+    <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="218dp"
+            android:layout_height="142dp"
+            android:background="@drawable/loogo2"
+            android:id="@+id/openbook_view"
+            android:layout_marginTop="21dp"
+            app:layout_constraintTop_toBottomOf="@+id/quote_view" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="92dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="1.0"/>
+    <androidx.appcompat.widget.AppCompatImageView android:layout_width="250dp"
+                                                  android:layout_height="30dp"
+                                                  android:background="@drawable/quote"
+                                                  android:id="@+id/quote_view"
+                                                  app:layout_constraintStart_toStartOf="parent"
+                                                  android:layout_marginStart="67dp"
+                                                  app:layout_constraintEnd_toEndOf="parent"
+                                                  android:layout_marginEnd="67dp"
+                                                  app:layout_constraintTop_toBottomOf="@+id/name_view"
+                                                  android:layout_marginBottom="20dp"
+                                                  app:layout_constraintBottom_toTopOf="@+id/openbook_view"
+                                                  android:layout_marginTop="10dp"
+                                                  app:layout_constraintHorizontal_bias="0.5"/>
+    <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="180dp"
+            android:background="@drawable/eclass"
+            android:layout_height="60dp"
+
+            android:id="@+id/name_view"
+            app:layout_constraintTop_toBottomOf="@+id/logo_view" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="102dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="102dp"
+            app:layout_constraintBottom_toTopOf="@+id/quote_view" app:layout_constraintHorizontal_bias="0.5"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

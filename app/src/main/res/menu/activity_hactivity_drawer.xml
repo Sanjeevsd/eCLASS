@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/nav_routine"
+                android:icon="@drawable/ic_routine"
+                android:title="Routine"/>
+
+        <item
+        android:id="@+id/nav_notice"
+        android:icon="@drawable/ic_menu_gallery"
+        android:title="Notice"
+        />
+<item
+        android:id="@+id/nav_assignment"
+        android:icon="@drawable/icon_assign"
+        android:title="Assignments"
+    />
+        <item
+        android:id="@+id/nav_notes"
+        android:icon="@drawable/note_icon"
+        android:title="Notes"/>
+        <item
+                android:id="@+id/nav_home"
+                android:icon="@drawable/ic_home"
+                android:title="AdminControl"/>
+        <item
+        android:id="@+id/nav_Discussion"
+        android:icon="@drawable/ic_home"
+        android:title="Discussion"
+        />
+        <item
+        android:id="@+id/nav_DiscussionPost"
+        android:icon="@drawable/ic_home"
+        android:title="Discussion Post"
+        />
+    </group>
+    <group>
+    <item android:title="">
+
+    </item>
+    </group>
+</menu>

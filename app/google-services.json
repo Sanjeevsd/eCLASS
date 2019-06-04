@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "533565684792",
+    "firebase_url": "https://eclass-cfe8b.firebaseio.com",
+    "project_id": "eclass-cfe8b",
+    "storage_bucket": "eclass-cfe8b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:533565684792:android:fceab8ced49adaf7",
+        "android_client_info": {
+          "package_name": "com.example.sanzu.eclass"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "533565684792-qll8s4p1lltf06h1bt5e6bcgoj4dtk6f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sanzu.eclass",
+            "certificate_hash": "213b1f5ddb3a01b865aebb27d3e855d3ce88fc93"
+          }
+        },
+        {
+          "client_id": "533565684792-5dk596qhjahpj1mmtsru7611l88fpmk0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sanzu.eclass",
+            "certificate_hash": "73d19fad783dda8edd0498ef50193f9bc818c74f"
+          }
+        },
+        {
+          "client_id": "533565684792-73arc8da5bhkqicj9tkoslredbn7ve01.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3ljzDOp3THauBj40AyBHuWMbdlF8rgpU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "533565684792-73arc8da5bhkqicj9tkoslredbn7ve01.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

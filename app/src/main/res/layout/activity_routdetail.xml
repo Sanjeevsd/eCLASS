@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/material_bg">
+
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            app:cardBackgroundColor="@color/colorPrimaryLight"
+            app:cardCornerRadius="6dp"
+            app:contentPadding="10dp"
+            app:cardElevation="10dp"
+            android:id="@+id/sp1_card"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent">
+     <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+                                                        android:layout_height="match_parent">
+         <TextView
+                 android:text=""
+                 android:textAlignment="center"
+                 android:gravity="center_vertical"
+                 android:textColor="@color/primaryTextColor"
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent" android:id="@+id/tvsp1"
+                 android:textSize="18sp"
+                 android:textStyle="bold"
+                 app:layout_constraintStart_toEndOf="@+id/timev1s"
+                 android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+                 app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="8dp"
+                 app:layout_constraintEnd_toStartOf="@+id/timev1e"/>
+         <TextView
+                 android:text=""
+                 android:textSize="15sp"
+                 android:gravity="center_vertical"
+
+                 android:layout_width="0dp"
+                 android:textColor="@color/primaryTextColor"
+                 android:layout_height="match_parent" android:id="@+id/timev1s"
+                 app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                 android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"/>
+         <TextView
+                 android:text=""
+                 android:textSize="15sp"
+                 android:gravity="center_vertical"
+android:textColor="@color/primaryTextColor"
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent" android:id="@+id/timev1e"
+                 android:layout_marginTop="8dp"
+                 app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="8dp"
+                 app:layout_constraintEnd_toEndOf="parent"/>
+     </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="70dp" app:cardBackgroundColor="@color/colorPrimaryLight" app:cardCornerRadius="5dp"
+            app:contentPadding="10dp" app:cardElevation="10dp"
+            android:id="@+id/sp2_card" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/sp1_card" app:layout_constraintStart_toStartOf="@+id/sp1_card"
+            app:layout_constraintEnd_toEndOf="@+id/sp1_card" android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+                                                           android:layout_height="match_parent">
+            <TextView
+                    android:text=""
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/primaryTextColor"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" android:id="@+id/tvsp2"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/timev2s"
+                    android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/timev2e"/>
+            <TextView
+                    android:textColor="@color/primaryTextColor"
+                    android:text="@string/timeview"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" android:id="@+id/timev2s"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"/>
+            <TextView
+                    android:text="@string/timeview"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" android:id="@+id/timev2e"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="70dp" app:cardBackgroundColor="@color/colorPrimaryLight" app:cardCornerRadius="5dp"
+            app:contentPadding="10dp" app:cardElevation="10dp" android:id="@+id/sp3_card"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/sp2_card"
+            app:layout_constraintStart_toStartOf="@+id/sp2_card"
+            app:layout_constraintEnd_toEndOf="@+id/sp2_card">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+                                                           android:layout_height="match_parent">
+            <TextView
+                    android:text="@string/textview"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:textColor="@color/primaryTextColor"
+                    android:layout_height="match_parent" android:id="@+id/tvsp3"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/timev3s"
+                    android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/timev3e"/>
+            <TextView
+                    android:text="@string/timeview"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" android:id="@+id/timev3s"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"/>
+            <TextView
+                    android:text="@string/timeview"
+                    android:textSize="15sp"
+                    android:textColor="@color/primaryTextColor"
+                    android:gravity="center_vertical"
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" android:id="@+id/timev3e"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="70dp" app:cardBackgroundColor="@color/colorPrimaryLight" app:cardCornerRadius="5dp"
+            app:contentPadding="10dp" app:cardElevation="10dp" android:id="@+id/sp4_card"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/sp3_card"
+            app:layout_constraintEnd_toEndOf="@+id/sp3_card" app:layout_constraintTop_toBottomOf="@+id/sp3_card">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+                                                           android:layout_height="match_parent">
+            <TextView
+                    android:text="@string/textview"
+                    android:textAlignment="center"
+                    android:textColor="@color/primaryTextColor"
+                    android:gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" android:id="@+id/tvsp4"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/timev4s"
+                    android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/timev4e"/>
+            <TextView
+                    android:text="@string/timeview"
+                    android:textSize="15sp"
+                    android:textColor="@color/primaryTextColor"
+                    android:gravity="center_vertical"
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" android:id="@+id/timev4s"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"/>
+            <TextView
+                    android:text="@string/timeview"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/primaryTextColor"
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" android:id="@+id/timev4e"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="70dp" app:cardBackgroundColor="@color/colorPrimaryLight" app:cardCornerRadius="5dp"
+            app:contentPadding="10dp" app:cardElevation="10dp" android:id="@+id/sp5_card"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/sp4_card"
+            app:layout_constraintEnd_toEndOf="@+id/sp4_card" app:layout_constraintTop_toBottomOf="@+id/sp4_card">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+                                                           android:layout_height="match_parent">
+            <TextView
+                    android:text="@string/textview"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/primaryTextColor"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" android:id="@+id/tvsp5"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/timev5s"
+                    android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/timev5e"/>
+            <TextView
+                    android:text="@string/timeview"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/primaryTextColor"
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" android:id="@+id/timev5s"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toTopOf="parent"/>
+            <TextView
+                    android:text="@string/timeview"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+
+                    android:textColor="@color/primaryTextColor"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/timev5e"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="70dp" app:cardBackgroundColor="@color/colorPrimaryLight" app:cardCornerRadius="5dp"
+            app:contentPadding="10dp" app:cardElevation="10dp" android:id="@+id/sp6_card"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/sp5_card"
+            app:layout_constraintEnd_toEndOf="@+id/sp5_card" app:layout_constraintTop_toBottomOf="@+id/sp5_card">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+                                                           android:layout_height="match_parent">
+            <TextView
+                    android:text="@string/textview"
+                    android:textColor="@color/primaryTextColor"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" android:id="@+id/tvsp6"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/timev6s"
+                    android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/timev6e"/>
+            <TextView
+                    android:text="@string/timeview"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+
+                    android:textColor="@color/primaryTextColor"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" android:id="@+id/timev6s"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"/>
+            <TextView
+                    android:text="@string/timeview"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+
+                    android:textColor="@color/primaryTextColor"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" android:id="@+id/timev6e"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="70dp" app:cardBackgroundColor="@color/colorPrimaryLight" app:cardCornerRadius="5dp"
+            app:contentPadding="10dp" app:cardElevation="10dp" android:id="@+id/sp7_card"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/sp6_card" app:layout_constraintEnd_toEndOf="@+id/sp6_card"
+            app:layout_constraintTop_toBottomOf="@+id/sp6_card">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+                                                           android:layout_height="match_parent">
+            <TextView
+                    android:text="@string/textview"
+                    android:textAlignment="center"
+                    android:textColor="@color/primaryTextColor"
+                    android:gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" android:id="@+id/tvsp7"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/timev7s"
+                    android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/timev7e"/>
+            <TextView
+                    android:text="@string/timeview"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+
+                    android:textColor="@color/primaryTextColor"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" android:id="@+id/timev7s"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"/>
+            <TextView
+                    android:text="@string/timeview"
+                    android:textSize="15sp"
+                    android:textColor="@color/primaryTextColor"
+                    android:gravity="center_vertical"
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" android:id="@+id/timev7e"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
