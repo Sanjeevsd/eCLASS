@@ -8,4 +8,8 @@
           android:orderInCategory="100"
           app:showAsAction="never"
     />
+    <item
+    android:title="Settings"
+    android:id="@+id/Profile_Settings"
+    />
 </menu>

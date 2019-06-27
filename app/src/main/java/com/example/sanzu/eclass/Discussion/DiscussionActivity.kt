@@ -59,17 +59,12 @@ class DiscussionActivity : AppCompatActivity() {
                         if (commentPassing!=null)
                         {
                             dadapter.add(dNoticeItem(commentPassing!!))
-
                         }
 
                     }
-                    override fun onCancelled(p0: DatabaseError) {
+                    override fun onCancelled(p0: DatabaseError) {}
 
-                    }
-
-                    override fun onChildMoved(p0: DataSnapshot, p1: String?) {
-
-                    }
+                    override fun onChildMoved(p0: DataSnapshot, p1: String?) {}
 
                     override fun onChildChanged(p0: DataSnapshot, p1: String?) {
                        val commentPass=  p0.getValue(discussionmodal::class.java)
@@ -77,24 +72,12 @@ class DiscussionActivity : AppCompatActivity() {
                         if (commentPass!=null)
                         {
                             dadapter.add(dNoticeItem(commentPass))
-
                         }
                     }
-
-
-
-                    override fun onChildRemoved(p0: DataSnapshot) {
-
-                    }
-
+                    override fun onChildRemoved(p0: DataSnapshot) {}
                 })
             }
         })
-
-
-
-
-
     }
 }
 class dNoticeItem(val dnoticetitle: discussionmodal):Item<ViewHolder>(){
@@ -104,9 +87,6 @@ class dNoticeItem(val dnoticetitle: discussionmodal):Item<ViewHolder>(){
         viewHolder.itemView.discussion_time_show.text=dnoticetitle.posttime
         viewHolder.itemView.discussion_name.text=dnoticetitle.postername
         Log.d("discussion","title is:${dnoticetitle.discussiontitle},\n body is:${dnoticetitle.discussioncontent},\n time is:${dnoticetitle.posttime}")
-
-
-
     }
     override fun getLayout(): Int {
         return R.layout.discussion_single_content

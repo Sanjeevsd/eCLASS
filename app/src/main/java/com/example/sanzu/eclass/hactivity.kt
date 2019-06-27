@@ -20,6 +20,7 @@ import android.widget.Toast
 import com.example.sanzu.eclass.AdmiinChanges.AdminActivity
 import com.example.sanzu.eclass.Discussion.DiscussionActivity
 import com.example.sanzu.eclass.Discussion.DiscussionPostActivity
+import com.example.sanzu.eclass.Discussion.RecommendedDiscussionActivity
 import com.example.sanzu.eclass.LoginFIles.Login_Activity
 import com.example.sanzu.eclass.Notes.NotesActivity
 
@@ -29,6 +30,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import com.google.firebase.messaging.FirebaseMessaging
 import kotlinx.android.synthetic.main.activity_hactivity.*
+import kotlinx.android.synthetic.main.activity_profile_setting.*
 import kotlinx.android.synthetic.main.app_bar_hactivity.*
 import kotlinx.android.synthetic.main.content_hactivity.*
 import kotlinx.android.synthetic.main.nav_header_hactivity.*
@@ -40,7 +42,9 @@ import java.util.*
 
 class hactivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
     val uid=FirebaseAuth.getInstance().uid.toString()
-
+    var sectionofuser:String?=null
+    var nameofcurrentuser:String?=null
+    var topics:String?=null
     val databaseref=FirebaseDatabase.getInstance().reference
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -89,6 +93,13 @@ class hactivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedLi
                 startActivity(logout)
                 finish()
             }
+            R.id.Profile_Settings->{
+                Log.d("setting","the name is  h : $nameofcurrentuser")
+                val intent = Intent(this,profileSetting::class.java)
+                intent.putExtra("setting",nameofcurrentuser)
+                intent.putExtra("topic",topics)
+                startActivity(intent)
+            }
             else -> return super.onOptionsItemSelected(item)
         }
         return true
@@ -123,12 +134,14 @@ class hactivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedLi
                 drawer_layout.closeDrawers()
             }
             R.id.nav_Discussion->{
-                val discussionactivity=Intent(this, DiscussionActivity::class.java)
-                startActivity(discussionactivity)
+                val discussionactivityr=Intent(this, RecommendedDiscussionActivity::class.java)
+                discussionactivityr.putExtra("topic",topics)
+                startActivity(discussionactivityr)
                 drawer_layout.closeDrawers()
             }
             R.id.nav_DiscussionPost->{
                 val discussionactivity=Intent(this, DiscussionPostActivity::class.java)
+
                 startActivity(discussionactivity)
                 drawer_layout.closeDrawers()
             }
@@ -168,11 +181,15 @@ private fun checkAdminautho(){
             }
             override fun onDataChange(Uname: DataSnapshot) {
               val nameofuser= Uname.getValue(Users::class.java)
+                topics=Uname.child("topic").getValue().toString()
+                Log.d("hactivity","topics is$topics")
+
                 Log.d("hactivity","special case:${nameofuser?.names.toString()} and :${nameofuser?.uid.toString()}")
-              val uname=nameofuser?.names.toString()
-                navigation_name?.text = uname
+               nameofcurrentuser=nameofuser?.names.toString()
+                navigation_name?.text = nameofcurrentuser
                 val rollno:String=nameofuser?.roll.toString()
-                roll_no_navigation.text = rollno
+                roll_no_navigation?.text = rollno
+                sectionofuser=nameofuser?.section.toString()
             }
         }
         )

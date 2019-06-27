@@ -12,6 +12,10 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Discussion.RecommendedDiscussionActivity">
+        </activity>
+        <activity android:name=".profileSetting">
+        </activity>
         <activity android:name=".Discussion.commentActivity">
         </activity>
         <activity android:name=".Discussion.DiscussionPostActivity">
